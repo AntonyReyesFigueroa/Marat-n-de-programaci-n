@@ -1,0 +1,30 @@
+.container__SN {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../../image/fondo_pc_home.jpg');
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: -1;
+}
+
+.SN__title {}
+
+.SN__title>h1 {
+    text-align: center;
+}
+
+@media only screen and (max-width: 900Px) {
+
+
+    .container__SN {
+        padding-top: 140px;
+    }
+
+
+
+    .SN__title>h1 {
+        font-size: 20px;
+
+    }
+}

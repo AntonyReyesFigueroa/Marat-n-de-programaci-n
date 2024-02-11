@@ -1,0 +1,111 @@
+
+
+.container__home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../../image/fondo_movil_home.jpg');
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: -1;
+    
+}
+
+.home__title{
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.home__title>h1 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+    margin-top: 20px;
+    color: rgb(21, 28, 95);
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+.main__home{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.main__time__home{
+    max-width: 2000px;
+}
+
+.main__time__home >h2{
+    display:flex ;
+    justify-content: center;
+    margin-top: 30px;
+    font-family: 'Playfair Display', serif;
+    color: rgb(21, 28, 95);
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+.main__article__container_container{
+    display: flex;
+    justify-content: center;
+
+}
+
+.main__article__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Espacio entre los elementos */
+    max-width: 1200px;
+    width: 100%; 
+}
+.article{
+    background-color: white;
+    max-width: 350px;
+    min-width: 280px;
+    height: 400px;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: 8px 5px 8px rgb(73, 71, 71);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.article_title{
+    display: flex;
+    justify-content: center;
+    font-size: 23px;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 800;
+}
+
+.article > img{
+    width: 250px;
+    display: block;
+    margin: auto;
+    border-radius: 49%;
+    border: 5px solid rgb(46, 92, 148);
+}
+
+.article_content{
+    margin: 1em;
+    text-align: justify;
+}
+
+
+@media only screen and (max-width: 900Px) {
+
+
+    .container__home {
+        padding-top: 140px;
+    }
+
+
+
+    .home__title>h1 {
+        font-size: 20px;
+
+    }
+}

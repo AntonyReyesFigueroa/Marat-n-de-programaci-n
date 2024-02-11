@@ -1,33 +1,65 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
+import { Route, Routes } from 'react-router-dom'
+import Home from './components/Main/Home/Home'
+import Sobre_nosotros from './components/Main/SobreNosotros/Sobre_nosotros'
+import Contactos from './components/Main/Contactos/Contactos'
+import ProtectedRoutes from './components/ProtectedRoutes'
+import Error404 from './components/Error404'
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [isOpen, setIsOpen] = useState(false)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className='container__app'>
+
+        <header>
+          <Header isOpen={isOpen} setIsOpen={setIsOpen} />
+        </header>
+
+        <main onClick={() => setIsOpen(false)}>
+          <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/sobre-nosotros' element={<Sobre_nosotros />} />
+          <Route path='/contactos' element={<Contactos />} />
+          
+          <Route path='/*' element={<Error404 />} /> 
+
+          <Route element={<ProtectedRoutes/>}>
+            {/* <Route path='/reseña' element={<Reseña />} />
+            <Route path='/Empleado' element={<Empleado />} />  */}
+          </Route>
+ 
+            {/* <Route path='/' element={<Home />} />
+<Route path='/Sobre-Nosotros' element={<SobreNosotros />} />
+<Route path='/Carta' element={<Carta />} />
+<Route path='/Login' element={<Login />} />
+
+<Route path='/*' element={<Error />} /> */}
+
+            {/* <Route element={<ProtectedRoutes />}>
+              <Route path='/Reservaciones' element={<Reservaciones />} />
+              <Route path='/Reseña' element={<Reseña />} />
+              <Route path='/Empleado' element={< Empleado />} />
+            </Route> */}
+            {/* <Route element={<ProtectedRoutes />} >
+    <Route path='/Empleado' element={<Empleado />} /> */}
+            {/* <Route path='/pokedex/:name' element={<PokemonDetails />} /> */}
+            {/* </Route> */}
+          </Routes>
+
+
+        </main>
+
+        <footer>
+          <Footer />
+        </footer>
+
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
