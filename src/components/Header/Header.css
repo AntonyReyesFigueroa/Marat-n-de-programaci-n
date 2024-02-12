@@ -16,6 +16,8 @@ a {
     margin-right: 4px;
 }
 
+
+
 .nav__user>img {
     width: 60px;
     margin-right: 4px;
@@ -120,9 +122,13 @@ a {
         display: flex;
         flex-direction: column;
         gap: 6px;
-        width: 190px;
+        width: 200px;
         text-align: center;
         margin: auto;
+    }
+
+    .nav__user-datos > p{
+        font-size: 12px;
     }
 
     .nav__user-datos>button {
