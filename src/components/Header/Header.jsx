@@ -15,17 +15,19 @@ const Header = ({ isOpen, setIsOpen }) => {
 
     return (
         <nav className='nav'>
-            <div className='nav__logo'>
-                <img src={logo} alt="" />
-                <p>FISIOTERAPIA FIGUEROA</p>
+            <Link Link to='/'>
+                <div className='nav__logo'>
+                    <img src={logo} alt="" />
+                    <p>FISIOTERAPIA FIGUEROA</p>
 
-                <div className={`nav_toogle ${isOpen && "open"}`} onClick={() => setIsOpen(!isOpen)}>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <div className={`nav_toogle ${isOpen && "open"}`} onClick={() => setIsOpen(!isOpen)}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
                 </div>
-
-            </div>
+            </Link>
 
             <div className={`nav__links ${isOpen && "open__menu"}`} onClick={() => setIsOpen(false)} >
                 <li> <Link to='/'>Inicio</Link> </li>

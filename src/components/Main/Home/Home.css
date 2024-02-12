@@ -63,7 +63,7 @@
     background-color: white;
     max-width: 350px;
     min-width: 280px;
-    height: 400px;
+    height: 450px;
     margin: 1em;
     padding: 1em;
     border-radius: 1em;
@@ -92,6 +92,7 @@
 .article_content{
     margin: 1em;
     text-align: justify;
+    min-height: 100px;
 }
 
 

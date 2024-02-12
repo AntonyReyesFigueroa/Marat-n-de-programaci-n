@@ -8,7 +8,7 @@ import Sobre_nosotros from './components/Main/SobreNosotros/Sobre_nosotros'
 import Contactos from './components/Main/Contactos/Contactos'
 import ProtectedRoutes from './components/ProtectedRoutes'
 import Error404 from './components/Error404'
-
+import { Facebook, Whatsapp, GeoAlt, TelephoneFill, Tiktok } from 'react-bootstrap-icons';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
@@ -22,18 +22,26 @@ function App() {
         </header>
 
         <main onClick={() => setIsOpen(false)}>
-          <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/sobre-nosotros' element={<Sobre_nosotros />} />
-          <Route path='/contactos' element={<Contactos />} />
-          
-          <Route path='/*' element={<Error404 />} /> 
 
-          <Route element={<ProtectedRoutes/>}>
-            {/* <Route path='/reseña' element={<Reseña />} />
+
+            <b>
+              <a href="https://api.whatsapp.com/send?phone=51918320136&text=https://fisioterapia-figueroa.netlify.app/%0AHola,%20estoy%20interesado%20deseo%20obtener%20más%20información%20" target="_blank" rel="noopener noreferrer">
+                <div className='contactanos_flotante'><Whatsapp color="rgb(86, 253, 108)" size={24} />Contactanos</div> </a>
+            </b>
+      
+
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/sobre-nosotros' element={<Sobre_nosotros />} />
+            <Route path='/contactos' element={<Contactos />} />
+
+            <Route path='/*' element={<Error404 />} />
+
+            <Route element={<ProtectedRoutes />}>
+              {/* <Route path='/reseña' element={<Reseña />} />
             <Route path='/Empleado' element={<Empleado />} />  */}
-          </Route>
- 
+            </Route>
+
             {/* <Route path='/' element={<Home />} />
 <Route path='/Sobre-Nosotros' element={<SobreNosotros />} />
 <Route path='/Carta' element={<Carta />} />

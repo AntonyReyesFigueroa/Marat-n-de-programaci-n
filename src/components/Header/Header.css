@@ -45,6 +45,8 @@ a {
         display: flex;
         justify-content: start;
         align-items: center;
+        width: 320px;
+        height: 100%;
     }
     .nav__logo> p{
         font-size: 20px !important;
@@ -53,10 +55,23 @@ a {
         font-weight: bold;
     }
 
+    .nav__logo> p:hover{
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); 
+          transition: box-shadow 0.3s ease;
+      }
+      .nav__logo> p:active{
+        transform: scale(0.9)
+      }
+      
+
     .nav__logo>img {
         width: max-content;
         height: 60px;
     }
+
+      .nav__logo>img:active{
+        transform: scale(0.9)
+      }
 
 
 
@@ -72,11 +87,19 @@ a {
     .nav__links li {
         width: 120px;
         height: max-content;
-        /* border: 1px solid red; */
         text-align: center;
         font-size: 15px;
-        font-family: "Playfair Display", Georgia, serif;
+        font-family: 'Great Vibes', cursive;
+        font-weight: 500;
     }
+
+    .nav__links li:hover{
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); 
+          transition: box-shadow 0.3s ease;
+      }
+      .nav__links li:active{
+        transform: scale(0.9)
+      }
 
 
     .nav__user {

@@ -3,6 +3,9 @@ import './Home.css'
 import img1 from '../../../image/lesion_brazo.png'
 import img2 from '../../../image/dolor_espalda.png'
 import img3 from '../../../image/dolor_barriga.jpg'
+import img4 from '../../../image/bebe.png'
+import img5 from '../../../image/madres_gestando.png'
+import img6 from '../../../image/prevencion.png'
 
 const Home = () => {
   return (
@@ -30,9 +33,9 @@ const Home = () => {
               <div className="article_title">Dolor de Espalda </div>
               <img src={img2} alt="Lesion de brazo" />
               <div className="article_content">
-              Identificación y tratamiento de las causas 
-              del dolor de espalda, proporcionando soluciones 
-              personalizadas.
+              Identificación y tratamiento de las causas del 
+              dolor de espalda, dolor en la columna y otros
+               factores que afecten su salud.
 
               </div>
             </article>
@@ -40,24 +43,47 @@ const Home = () => {
               <div className="article_title">Amontonadura </div>
               <img src={img3} alt="Lesion de brazo" />
               <div className="article_content">
-                Tratamiento de amontonadura, por haber hecho fuerza indebida, 
-                generando fuertes dolores de barriga 
+              Tratamiento para la amontonadura, consecuencia de 
+              esfuerzos indebidos, que ocasionan intensos dolores
+              abdominales
               </div>
             </article>
             <article className="article">
-              <div className="article_title"> </div>
-              <img src={img1} alt="Lesion de brazo" />
+              <div style={{textAlign:'center'}} className="article_title">Punsada o estreñimiento  en bebes</div>
+              <img src={img4} alt="Lesion de brazo" />
               <div className="article_content">
-                Tratamientos especializados con enfoques terapéuticos
-                específicos en lesiones de Hombros, brazos, y piernas
+              Tratamiento para bebés que lloran mucho, 
+              tienen resfriados y dificultades para respirar 
+              porque no los cargan correctamente, lo que les
+               da frío y les provoca punzadas en el pecho. 
+               También se enfoca en tratar el estreñimiento 
+               en bebés.
+
               </div>
             </article>
             <article className="article">
-              <div className="article_title">Lesiones </div>
-              <img src={img1} alt="Lesion de brazo" />
+              <div className="article_title">Madres gestantes </div>
+              <img src={img5} alt="Lesion de brazo" />
               <div className="article_content">
-                Tratamientos especializados con enfoques terapéuticos
-                específicos en lesiones de Hombros, brazos, y piernas
+              Tratamiento para problemas durante el parto, como
+               la posición incorrecta del bebé, con el objetivo de 
+               evitar cesáreas innecesarias. También se ofrece terapia 
+               para recuperar la forma física después del parto y 
+               evitar la acumulación excesiva de grasa abdominal.
+              </div>
+            </article>
+
+            <article className="article">
+              <div className="article_title">Prevención y Rehabilitación </div>
+              <img src={img6} alt="Lesion de brazo" />
+              <div className="article_content">
+              Ofrecemos un programa integral de fisioterapia preventiva
+               y rehabilitación para quienes realizan esfuerzos
+                físicos intensos. Incluye orientación para prevenir 
+                recaídas después de la terapia, promoviendo hábitos 
+                saludables y cuidados para una recuperación rápida y 
+                sin contratiempos.
+
               </div>
             </article>
           </div>

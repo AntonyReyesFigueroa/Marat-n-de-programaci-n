@@ -4,25 +4,25 @@ import "./Contacto.css"
 const Contactos = () => {
   return (
     <div className='main_formulario'>
+      <h1 className='tile__contacto'>CONTACTO</h1>
       <div className='formulario_container'>
         <section className='formulario1'>
           <h3>ENVÍANOS UN MENSAJE</h3>
           <form>
-            <div>
-              
+            <div className='contacto__input'>
               <label htmlFor="txtName">Ingrese su nombre:</label>
               <input type="text" name="txtName" id="txtName" maxLength="50" required />
             </div>
-            <div>
+            <div className='contacto__input'>
               <label htmlFor="txtEmail">Ingrese su correo electrónico:</label>
               <input type="email" name="txtEmail" id="txtEmail" autoComplete="off" maxLength="128" required />
             </div>
-            <div>
+            <div className='contacto__input'>
               <label htmlFor="bodyDetalle">Ingrese su comentario:</label>
               <textarea name="bodyDetalle" id="bodyDetalle" rows="8" required></textarea>
             </div>
             <div className='button_container'>
-            <button type="submit" className="btn btn-light">ENVIAR MENSAJE</button>
+            <button type="submit" className="btn btn-light">Enviar mensaje</button>
             </div>      
           </form>
         </section>

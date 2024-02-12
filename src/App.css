@@ -6,20 +6,58 @@
 
 }
 
-@media only screen and (max-width: 768px) {
+.contactanos_flotante{
+  position: fixed;
+  top: 10%;
+  right: 0;
+  transform: translate(-50%, 50%);
+  background-color: rgb(83, 155, 204);
+  border-radius: 1em;
+  padding: 1em;
+  color: white;
+  box-shadow: 8px 5px 8px rgb(73, 71, 71);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.contactanos_flotante:hover{
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); 
+    transition: box-shadow 0.3s ease;
+}
+.contactanos_flotante:active{
+  padding: 1.1em;
+}
+
+@media only screen and (max-width: 1300px) {
   .container__app {
     display: grid;
     grid-template-rows: 80px 1fr 205px;
     /* height: 100vh; */
     /* width: 100vw; */
   }
+  .contactanos_flotante{
+    top: 65%;
+    right: -50px;
+  }
   
 }
 
-main{
-  background: rgba(43, 103, 160, 0.25);
+@media only screen and (max-width: 500px) {
+  .container__app {
+    grid-template-rows: 80px 1fr 300px;
+  }
   
 }
+
+
+main{
+  background: rgba(43, 103, 160, 0.25);
+}
+
+
+
 
 
 
