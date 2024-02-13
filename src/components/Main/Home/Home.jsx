@@ -18,18 +18,29 @@ const Home = () => {
         <h3 onClick={() => setModalPubli(false)}>x</h3>
         <a href="https://www.facebook.com/p/Matarazzo-GYM-100069397291625/">
           <div style={{
-            display:'flex',
+            display: 'flex',
             justifyContent: 'center',
             alignContent: 'center',
             flexWrap: 'wrap',
             gap: '20px',
           }}>
             <h1>Matarazzo GYM</h1>
-            <p>¡Cuida tu salud y alcanza tus metas fitness en Matarazzo!
+            <p
+
+              style={{
+                textAlign: 'justify'
+              }}
+
+            >
+              ¡Cuida tu salud y alcanza tus metas fitness en Matarazzo!
               Equipos modernos y entrenadores expertos. ¡Únete hoy!
             </p>
-            <p>
-            Horario de atención: De Lunes a Sabadado 5:00am - 9:00pm
+            <p
+              style={{
+                textAlign: 'center',
+              }}
+            >
+              Horario de atención: De Lunes a Sabadado 5:00am - 9:00pm
             </p>
             <b>
               <a className='s' href="https://www.facebook.com/p/Matarazzo-GYM-100069397291625/" target="_blank" rel="noopener noreferrer">
