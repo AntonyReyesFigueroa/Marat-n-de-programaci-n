@@ -16,7 +16,7 @@ const Home = () => {
 
       <div className='publicidad_gym' style={{ display: `${modalPubli ? 'flex' : 'none'}` }}>
         <h3 onClick={() => setModalPubli(false)}>x</h3>
-        <a href="https://www.facebook.com/p/Matarazzo-GYM-100069397291625/" target="_blank" rel="noopener noreferrer" >
+        <div href="https://www.facebook.com/p/Matarazzo-GYM-100069397291625/" target="_blank" rel="noopener noreferrer" >
           <div className="container_publicidad">
             <h1>Matarazzo GYM </h1>
             <p>¡Cuida tu salud y alcanza tus metas fitness en Matarazzo!
@@ -29,7 +29,7 @@ const Home = () => {
               </a>
             </b>
           </div>
-        </a>
+        </div>
       </div>
 
       <div className="home__title">
