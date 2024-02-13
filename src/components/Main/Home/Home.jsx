@@ -16,24 +16,9 @@ const Home = () => {
 
       <div className='publicidad_gym' style={{ display: `${modalPubli ? 'flex' : 'none'}` }}>
         <h3 onClick={() => setModalPubli(false)}>x</h3>
+        <a href=""> asdasdasdasdasd</a>
 
-        <a href="https://www.facebook.com/p/Matarazzo-GYM-100069397291625/" target="_blank" rel="noopener noreferrer" >
-          <div className="container_publicidad">
-            <h1>Matarazzo GYM </h1>
-            <p>¡Cuida tu salud y alcanza tus metas fitness en Matarazzo!
-              Equipos modernos y entrenadores expertos. ¡Únete hoy!
-            </p>
-            <p> Horario de atención: De Lunes a Sabadado 5:00am - 9:00pm</p>
-            <b>
-              <a className='s' href="https://www.facebook.com/p/Matarazzo-GYM-100069397291625/" target="_blank" rel="noopener noreferrer">
-                <div className='footer__link'><Facebook color="blue" size={24} />Matarazzo GYM </div>
-              </a>
-            </b>
-          </div>
-        </a>
-
-{/* 
-        <a href="https://www.facebook.com/p/Matarazzo-GYM-100069397291625/" target="_blank" rel="noopener noreferrer" >
+        {/* <a href="https://www.facebook.com/p/Matarazzo-GYM-100069397291625/" target="_blank" rel="noopener noreferrer" >
           <div className="container_publicidad">
             <h1>Matarazzo GYM </h1>
             <p>¡Cuida tu salud y alcanza tus metas fitness en Matarazzo!
@@ -48,7 +33,7 @@ const Home = () => {
           </div>
         </a> */}
 
-
+        
       </div>
 
       <div className="home__title">
