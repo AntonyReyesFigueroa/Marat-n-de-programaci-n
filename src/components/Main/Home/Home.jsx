@@ -16,7 +16,14 @@ const Home = () => {
 
       <div className='publicidad_gym' style={{ display: `${modalPubli ? 'flex' : 'none'}` }}>
         <h3 onClick={() => setModalPubli(false)}>x</h3>
-        <a href=""> asdasdasdasdasd</a>
+        <a href="https://www.facebook.com/p/Matarazzo-GYM-100069397291625/">
+          <div>
+            <h1>Matarazzo GYM</h1>
+            <p>¡Cuida tu salud y alcanza tus metas fitness en Matarazzo!
+              Equipos modernos y entrenadores expertos. ¡Únete hoy!
+            </p>
+          </div>
+        </a>
 
         {/* <a href="https://www.facebook.com/p/Matarazzo-GYM-100069397291625/" target="_blank" rel="noopener noreferrer" >
           <div className="container_publicidad">
@@ -33,7 +40,7 @@ const Home = () => {
           </div>
         </a> */}
 
-        
+
       </div>
 
       <div className="home__title">
