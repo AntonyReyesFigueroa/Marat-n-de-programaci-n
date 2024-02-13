@@ -22,6 +22,14 @@ const Home = () => {
             <p>¡Cuida tu salud y alcanza tus metas fitness en Matarazzo!
               Equipos modernos y entrenadores expertos. ¡Únete hoy!
             </p>
+            <p>
+            Horario de atención: De Lunes a Sabadado 5:00am - 9:00pm
+            </p>
+            <b>
+              <a className='s' href="https://www.facebook.com/p/Matarazzo-GYM-100069397291625/" target="_blank" rel="noopener noreferrer">
+                <div className='footer__link'><Facebook color="blue" size={24} />Matarazzo GYM </div>
+              </a>
+            </b>
           </div>
         </a>
 
