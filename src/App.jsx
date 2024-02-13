@@ -8,7 +8,7 @@ import Sobre_nosotros from './components/Main/SobreNosotros/Sobre_nosotros'
 import Contactos from './components/Main/Contactos/Contactos'
 import ProtectedRoutes from './components/ProtectedRoutes'
 import Error404 from './components/Error404'
-import { Facebook, Whatsapp, GeoAlt, TelephoneFill, Tiktok } from 'react-bootstrap-icons';
+import { Whatsapp, GeoAlt, TelephoneFill, Tiktok } from 'react-bootstrap-icons';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
@@ -24,11 +24,17 @@ function App() {
         <main onClick={() => setIsOpen(false)}>
 
 
-            <b>
-              <a href="https://api.whatsapp.com/send?phone=51918320136&text=https://fisioterapia-figueroa.netlify.app/%0AHola,%20estoy%20interesado%20deseo%20obtener%20más%20información%20" target="_blank" rel="noopener noreferrer">
-                <div className='contactanos_flotante'><Whatsapp color="rgb(86, 253, 108)" size={24} />Contactanos</div> </a>
-            </b>
-      
+          <b>
+            <a href="https://api.whatsapp.com/send?phone=51918320136&text=https://fisioterapia-figueroa.netlify.app/%0AHola,%20estoy%20interesado%20deseo%20obtener%20más%20información%20" target="_blank" rel="noopener noreferrer">
+              <div className='contactanos_flotante'><Whatsapp color="rgb(86, 253, 108)" size={24} />Contactanos</div> </a>
+          </b>
+
+          {/* <a href="mailto:antonyreyesfigueroa@gmail.com?subject=Solicitud de información&body=Hola,%20estoy%20interesado%20y%20deseo%20obtener%20más%20información." target="_blank" rel="noopener noreferrer">
+            <div className='contactanos_flotante'>
+              Contactanos
+            </div>
+          </a> */}
+
 
           <Routes>
             <Route path='/' element={<Home />} />

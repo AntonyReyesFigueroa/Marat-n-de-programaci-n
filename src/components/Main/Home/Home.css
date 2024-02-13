@@ -1,5 +1,3 @@
-
-
 .container__home {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../../image/fondo_movil_home.jpg');
     height: 100%;
@@ -8,10 +6,10 @@
     background-attachment: fixed;
     background-position: center;
     z-index: -1;
-    
+
 }
 
-.home__title{
+.home__title {
     max-width: 1200px;
     display: flex;
     justify-content: center;
@@ -28,17 +26,17 @@
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
 }
 
-.main__home{
+.main__home {
     max-width: 1200px;
     margin: auto;
 }
 
-.main__time__home{
+.main__time__home {
     max-width: 2000px;
 }
 
-.main__time__home >h2{
-    display:flex ;
+.main__time__home>h2 {
+    display: flex;
     justify-content: center;
     margin-top: 30px;
     font-family: 'Playfair Display', serif;
@@ -46,20 +44,22 @@
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
 }
 
-.main__article__container_container{
+.main__article__container_container {
     display: flex;
     justify-content: center;
 
 }
 
-.main__article__container{
+.main__article__container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; /* Espacio entre los elementos */
+    justify-content: space-around;
+    /* Espacio entre los elementos */
     max-width: 1200px;
-    width: 100%; 
+    width: 100%;
 }
-.article{
+
+.article {
     background-color: white;
     max-width: 350px;
     min-width: 280px;
@@ -73,7 +73,7 @@
     justify-content: center;
 }
 
-.article_title{
+.article_title {
     display: flex;
     justify-content: center;
     font-size: 23px;
@@ -81,7 +81,7 @@
     font-weight: 800;
 }
 
-.article > img{
+.article>img {
     width: 250px;
     display: block;
     margin: auto;
@@ -89,7 +89,7 @@
     border: 5px solid rgb(46, 92, 148);
 }
 
-.article_content{
+.article_content {
     margin: 1em;
     text-align: justify;
     min-height: 100px;
@@ -108,5 +108,59 @@
     .home__title>h1 {
         font-size: 20px;
 
+    }
+}
+
+@media only screen and (min-width: 1800Px) {
+    .publicidad_gym {
+        width: 300px;
+        height: 300px;
+        position: fixed;
+        top: 30%;
+        right: 25px;
+        transform: translate(-50%, 50%);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../../image/gym.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        border-radius: 1em;
+        padding: 1em;
+        color: white;
+        box-shadow: 8px 5px 8px rgb(73, 71, 71);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .publicidad_gym h3{ 
+      width: 40%;
+      margin-left: 240px;
+      font-family: 'Times New Roman', Times, serif;
+      cursor: pointer;
+    }
+
+
+
+    .container_publicidad{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .container_publicidad> p{
+        text-align: justify;
+    }
+
+    @keyframes animacion-publicidad {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+    }
+    
+    .publicidad_gym {
+        animation: animacion-publicidad 3s infinite; /* Aplica la animación */
     }
 }
