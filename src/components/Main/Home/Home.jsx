@@ -17,7 +17,7 @@ const Home = () => {
       <div className='publicidad_gym' style={{ display: `${modalPubli ? 'flex' : 'none'}` }}>
         <h3 onClick={() => setModalPubli(false)}>x</h3>
         <a href="https://www.facebook.com/p/Matarazzo-GYM-100069397291625/">
-          <div>
+          <div className='container_publicidad'>
             <h1>Matarazzo GYM</h1>
             <p>¡Cuida tu salud y alcanza tus metas fitness en Matarazzo!
               Equipos modernos y entrenadores expertos. ¡Únete hoy!
