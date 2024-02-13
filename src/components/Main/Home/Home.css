@@ -142,17 +142,7 @@
 
 
 
-    .container_publicidad{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
 
-    .container_publicidad> p{
-        text-align: justify;
-    }
 
     @keyframes animacion-publicidad {
         0% { transform: scale(1); }
