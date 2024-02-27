@@ -147,15 +147,24 @@ section:nth-child(2)>h3 {
 
 @media only screen and (max-width: 900Px) {
 
+    .container_form_contacto{
+        min-width: 280px;
+    }
+
 
     .main_formulario {
-        padding-top: 140px;
+        padding-top: 130px;
+        min-width: 200px;
     }
 
-    .formulario1,
-    .formulario2 {
-        height: 590px;
+    .mapa{
+        width: 200px;
     }
+
+    .formulario1{
+        height: 690px;
+    }
+    
 
     .contacto__input:nth-child(1)>input {
         width: 80%;
