@@ -7,6 +7,7 @@ import img4 from '../../../image/bebe.png'
 import img5 from '../../../image/madres_gestando.png'
 import img6 from '../../../image/prevencion.png'
 import { Facebook } from 'react-bootstrap-icons';
+import TitleHome from './TitleHome'
 
 const Home = () => {
 
@@ -52,9 +53,7 @@ const Home = () => {
 
       </div>
 
-      <div className="home__title">
-        <h1>FISIOTERAPIA FIGUEROA</h1>
-      </div>
+      <TitleHome />
 
       <div className="main__home">
         <div className="main__time__home">

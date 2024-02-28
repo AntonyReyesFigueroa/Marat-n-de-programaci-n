@@ -107,6 +107,7 @@ a {
         font-size: 15px;
         font-family: 'Great Vibes', cursive;
         font-weight: 500;
+        color: white;
     }
 
     .nav__links li:hover{
