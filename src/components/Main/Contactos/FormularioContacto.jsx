@@ -20,10 +20,22 @@ const FormularioContacto = () => {
 
     const { update, updateData } = usePut(URL)
 
+    
+    const getCurrentDateTime = () => {
+        const currentDate = new Date();
+        const year = currentDate.getFullYear();
+        const month = String(currentDate.getMonth() + 1).padStart(2, '0'); // Agrega un cero al inicio si el mes es de un solo dígito
+        const day = String(currentDate.getDate()).padStart(2, '0'); // Agrega un cero al inicio si el día es de un solo dígito
+        const hours = String(currentDate.getHours()).padStart(2, '0'); // Agrega un cero al inicio si la hora es de un solo dígito
+        const minutes = String(currentDate.getMinutes()).padStart(2, '0'); // Agrega un cero al inicio si los minutos son de un solo dígito
+      
+        return `${year}-${month}-${day}    🕥    ${hours}:${minutes}`;
+      };
+
     const submit = mensajerecibido => {
         mensajerecibido.picture = `${isAuthenticated? user?.picture: 'https://img.freepik.com/vector-premium/icono-perfil-usuario-estilo-plano-ilustracion-vector-avatar-miembro-sobre-fondo-aislado-concepto-negocio-signo-permiso-humano_157943-15752.jpg'}`
         mensajerecibido.color = 'rgb(45, 85, 194)'
-        
+        mensajerecibido.fecha = getCurrentDateTime()
         if(isAuthenticated){
             mensajerecibido.email = user?.email
             mensajerecibido.name = user?.name
@@ -53,8 +65,6 @@ const FormularioContacto = () => {
         }else{
             alert('Mensaje no enviado, los datos no han sido llenados correcto')
         }
-
-
 
     }
 

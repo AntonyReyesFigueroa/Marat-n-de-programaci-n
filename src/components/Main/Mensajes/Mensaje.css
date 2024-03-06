@@ -57,7 +57,7 @@
 
 .mensaje_foto>img {
     border-radius: 50%;
-    width: 40px;
+    width: 60px;
     margin: 1em;
 }
 
@@ -85,4 +85,13 @@
     .mensajes {
         margin-top: 8em;
     }
+}
+
+.fecha_nombre{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
 }

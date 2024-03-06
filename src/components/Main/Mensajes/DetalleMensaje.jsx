@@ -2,10 +2,13 @@ import React from 'react'
 
 const DetalleMensaje = ({ data }) => {
     return (
-        <div className='detalleMensaje' style={{backgroundColor:`${data.color}`}}>
+        <div className='detalleMensaje' style={{ backgroundColor: `${data.color}` }}>
             <div className='mensaje_foto'>
                 <img src={data.picture} alt={data.name} />
-                <b>{data.name} </b>
+                <div className='fecha_nombre'>
+                    <b>{data.name} </b>
+                    <b>{data.fecha} </b>
+                </div>
             </div>
 
             <div className='contenido_mensaje'>
