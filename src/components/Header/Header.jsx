@@ -42,10 +42,10 @@ const Header = ({ isOpen, setIsOpen }) => {
 
                 {
 
-                    // isAuthenticated ?
+                    isAuthenticated ?
                         <li id='mensajes'>  <Link to='/mensaje'> <CantidadMensajes /></Link> <Link to='/mensaje'> Mensaje</Link> </li>
-                        // :
-                        // ''
+                        :
+                        ''
 
                 }
             </div>
