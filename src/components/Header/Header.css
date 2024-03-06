@@ -168,6 +168,12 @@ a {
     }
 }
 
+#mensajes{
+    display: flex;
+    justify-content: center; 
+    gap: 4px; 
+}
+
 
 
 
@@ -302,4 +308,17 @@ a {
 
 .pointer{
     cursor: pointer;
+}
+
+#mensajes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.cant_mensajes{
+    background-color: saddlebrown;
+    border-radius: 50%;
+    padding: 3px 6px 3px 6px;
 }

@@ -9,6 +9,7 @@ import Contactos from './components/Main/Contactos/Contactos'
 import ProtectedRoutes from './components/ProtectedRoutes'
 import Error404 from './components/Error404'
 import { Whatsapp, GeoAlt, TelephoneFill, Tiktok } from 'react-bootstrap-icons';
+import Mensajes from './components/Main/Mensajes/Mensajes'
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
@@ -42,6 +43,8 @@ function App() {
             <Route path='/contactos' element={<Contactos />} />
 
             <Route path='/*' element={<Error404 />} />
+
+            <Route path='/mensaje' element={<Mensajes />} />
 
             <Route element={<ProtectedRoutes />}>
               {/* <Route path='/reseña' element={<Reseña />} />

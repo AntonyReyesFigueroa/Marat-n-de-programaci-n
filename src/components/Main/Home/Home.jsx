@@ -5,13 +5,13 @@ import img2 from '../../../image/dolor_espalda.png'
 import img3 from '../../../image/dolor_barriga.jpg'
 import img4 from '../../../image/bebe.png'
 import img5 from '../../../image/madres_gestando.png'
-import img6 from '../../../image/prevencion.png'
 import { Facebook } from 'react-bootstrap-icons';
 import TitleHome from './TitleHome'
 
 const Home = () => {
 
   const [modalPubli, setModalPubli] = useState(true)
+  
   return (
     <div className='container__home'>
 
@@ -44,9 +44,12 @@ const Home = () => {
               Horario de atención: De Lunes a Sabadado 5:00am - 9:00pm
             </p>
             <b>
-              <a className='s' href="https://www.facebook.com/p/Matarazzo-GYM-100069397291625/" target="_blank" rel="noopener noreferrer">
+
+              <div className='footer__link'><Facebook color="blue" size={24} />Matarazzo GYM </div>
+
+              {/* <a className='s' href="https://www.facebook.com/p/Matarazzo-GYM-100069397291625/" target="_blank" rel="noopener noreferrer">
                 <div className='footer__link'><Facebook color="blue" size={24} />Matarazzo GYM </div>
-              </a>
+              </a> */}
             </b>
           </div>
         </a>
@@ -115,7 +118,7 @@ const Home = () => {
 
             <article className="article">
               <div className="article_title">Prevención y Rehabilitación </div>
-              <img src={img6} alt="Lesion de brazo" />
+              <img src="https://www.shrinerschildrens.org/-/media/images/shc/pediatric-care/female_nurse_boy_patient_physical_therapy_1200x852_77401.ashx" alt="Lesion de brazo" />
               <div className="article_content">
                 Ofrecemos un programa integral de fisioterapia preventiva
                 y rehabilitación para quienes realizan esfuerzos

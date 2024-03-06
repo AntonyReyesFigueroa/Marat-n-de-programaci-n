@@ -10,7 +10,7 @@ const usePost = (URL = '') => {
         if (data) {
             const response = await axios.post(URL, data).
                 then(res => setUploadData(res?.data)).
-                catch(err => console.log(err.message))
+                catch(err => console.log(err?.message))
         }
     }
 

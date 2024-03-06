@@ -2,8 +2,10 @@ import React, { useState } from 'react'
 import './Header.css'
 import userDefault from '../../image/user_img.avif'
 import logo from '../../image/logo_lf.png'
-import { Link } from 'react-router-dom'
+
 import { useAuth0 } from '@auth0/auth0-react'
+import CantidadMensajes from './CantidadMensajes'
+import { Link } from 'react-router-dom'
 
 const Header = ({ isOpen, setIsOpen }) => {
 
@@ -15,7 +17,7 @@ const Header = ({ isOpen, setIsOpen }) => {
 
     return (
         <nav className='nav'>
-            <Link Link to='/'>
+            <Link to='/'>
                 <div className='nav__logo'>
                     <img src={logo} alt="" />
                     <p>FISIOTERAPIA FIGUEROA</p>
@@ -33,17 +35,18 @@ const Header = ({ isOpen, setIsOpen }) => {
                 <li> <Link to='/'>Inicio</Link> </li>
                 <li> <Link to='/sobre-nosotros'>Sobre nosotros</Link> </li>
                 <li> <Link to='/contactos'>Contáctanos</Link> </li>
+
                 {/* <li> <Link to='/'>Carta</Link> </li> */}
                 {/* <li> <Link to='/'>Reserva</Link> </li> */}
 
 
                 {
-                    isOpen ?
-                        isAuthenticated ?
-                            <li className='pointer' onClick={() => logout()}  >salir</li>
-                            :
-                            <li className='pointer' onClick={() => loginWithRedirect()} >Registrate</li>
-                        : ''
+
+                    // isAuthenticated ?
+                        <li id='mensajes'>  <Link to='/mensaje'> <CantidadMensajes /></Link> <Link to='/mensaje'> Mensaje</Link> </li>
+                        // :
+                        // ''
+
                 }
             </div>
 
@@ -52,14 +55,14 @@ const Header = ({ isOpen, setIsOpen }) => {
 
                     {
                         isLoading ?
-                            <p>Cargando...</p>
+                        <p>Cargando...</p>
+                        :
+                        isAuthenticated ?
+                            <p> {user.email} </p>
                             :
-                            isAuthenticated ?
-                                <p> {user.email} </p>
-                                :
-                                <p>Sin usuario</p>
+                            <p>Sin usuario</p>
+                        
                     }
-
 
                     {
                         isAuthenticated ?
