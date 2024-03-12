@@ -40,14 +40,27 @@ const Header = ({ isOpen, setIsOpen }) => {
                 {/* <li> <Link to='/'>Reserva</Link> </li> */}
 
 
-                {
+                {/* {
 
                     isAuthenticated ?
                         <li id='mensajes'>  <Link to='/mensaje'> <CantidadMensajes /></Link> <Link to='/mensaje'> Mensaje</Link> </li>
                         :
                         ''
 
+                } */}
+
+                {
+
+                    // isAuthenticated === 'areyesf20_2@unc.edu.pe'?
+                    user?.email === 'areyesf20_2@unc.edu.pe'
+                        || user?.email === 'magdalenafigueroazambrano@gmail.com'
+                        ?
+                        <li id='mensajes'>  <Link to='/mensaje'> <CantidadMensajes /></Link> <Link to='/mensaje'> Mensaje</Link> </li>
+                        :
+                        ''
                 }
+
+
             </div>
 
             <div className='nav__user'>
@@ -55,13 +68,13 @@ const Header = ({ isOpen, setIsOpen }) => {
 
                     {
                         isLoading ?
-                        <p>Cargando...</p>
-                        :
-                        isAuthenticated ?
-                            <p> {user.email} </p>
+                            <p>Cargando...</p>
                             :
-                            <p>Sin usuario</p>
-                        
+                            isAuthenticated ?
+                                <p> {user.email} </p>
+                                :
+                                <p>Sin usuario</p>
+
                     }
 
                     {
