@@ -8,6 +8,16 @@ function App() {
     <>
       <div className='container__app'>
 
+        {/* 
+        Visititar estas paginas : 
+        http://localhost:5173/
+        https://maraton-programacion-antony-reyes.netlify.app/
+        https://github.com/AntonyReyesFigueroa/Marat-n-de-programaci-n/tree/main/src
+        https://manage.auth0.com/dashboard/us/dev-kubvfpktkd08timt/applications/bc4GJ0PI4rYGpl6uRqPf9V1JAaTcIFGB/settings
+        https://mockapi.io/projects
+        https://console.cloudinary.com/console/c-d6e68ce3478780187e6a00b8d25894/media_library/folders/c85e88f657890cbda110759ba18c7586d0?view_mode=mosaic
+        */}
+
         <header>
           <Header isOpen={isOpen} setIsOpen={setIsOpen} />
         </header>
@@ -23,7 +33,7 @@ function App() {
           <Routes>
             <Route element={<ProtectedRoutes />}></Route>
 
-            
+
             <Route path='/' element={<Home />} />
             <Route path='/sobre-nosotros' element={<Sobre_nosotros />} />
             <Route path='/contactos' element={<Contactos />} />
